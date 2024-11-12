@@ -1,0 +1,54 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: black;
+        color: #140c0c;
+        border-radius: 14px;
+    }
+    .tudao {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+        grid-template-areas: 
+        'header header'
+        'nav nav'
+        'section aside'
+        'article  aside'
+        'footer footer';
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .tudao header {
+        grid-area: header;
+        background-color: #4c6cd4;
+        border-radius: 2rem;
+    }
+
+    .tudao nav {
+        grid-area: nav;
+        background-color: #54bcc7;
+    }
+
+    .tudao section {
+        grid-area: section;
+        background-color: #fad030;
+    }
+
+    .tudao aside {
+        grid-area: aside;
+        background-color: #ffff;
+    }
+
+    .tudao article {
+        grid-area: article;
+        background-color: #e8795b;
+    }
+
+    .tudao footer {
+        grid-area: footer;
+        background-color:  #4c6cd4;
+    }
+  
